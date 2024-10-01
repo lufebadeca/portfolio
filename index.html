@@ -38,7 +38,8 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Profile picture" />
+        <source srcset="imagen.webp" type="image/webp">
+        <img src="./assets/profile-pic.png" alt="Profile picture" width="500" height="500"/>
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -76,10 +77,13 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
+          <source srcset="imagen.webp" type="image/webp">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
+            width="600" height="400"
+            loading="lazy"
           />
         </div>
         <div class="about-details-container">
@@ -195,6 +199,28 @@
                   <p>Basic</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
           <div class="details-container">
@@ -262,6 +288,28 @@
                   class="icon"
                 />
                 <div>
+                  <h3>Embedding</h3>
+                  <p>Basic</p>
+                </div>
+              </article>  
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MQTT</h3>
+                  <p>Basic</p>
+                </div>
+              </article> 
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
                   <h3>EMQX</h3>
                   <p>Basic</p>
                 </div>
@@ -282,6 +330,30 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-0.gif"
+                alt="Project 0"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ToDo List</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lufebadeca/todoList/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://lufebadeca.github.io/todoList/build/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -362,7 +434,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">IoT and Embedded</h2>
+            <h2 class="experience-sub-title project-title">IoT and Embedding</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
